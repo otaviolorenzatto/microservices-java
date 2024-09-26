@@ -1,9 +1,9 @@
 spring:
   application:
-   name: saudacao-service
+    name: saudacao-service
   profiles:
     active:
-    - it
+    - es
 server:
   port: 8081
 saudacao-service:

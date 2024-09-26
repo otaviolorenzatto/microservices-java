@@ -21,5 +21,4 @@ public class SaudacaoConfig {
 		this.nomePadrao = nomePadrao;
 	}
 	
-	
 }

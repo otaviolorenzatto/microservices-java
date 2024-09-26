@@ -16,18 +16,17 @@ import br.edu.atitus.paradigma.saudacao_service.configs.SaudacaoConfig;
 public class SaudacaoController {
 	
 	@Autowired
-	private  SaudacaoConfig saudacaoConfig;
+	private SaudacaoConfig saudacaoConfig;
 	
-	
-	@GetMapping({"", "/", "{nomePath}"})
+
+	@GetMapping({"","/", "{nomePath}"})
 	public ResponseEntity<String> getSaudacao(
 			@RequestParam(required = false) String nome,
 			@PathVariable(required = false) String nomePath){
 		String template = "%s %s!";
 		if (nome == null) 
-			nome =  nomePath != null ? nomePath : saudacaoConfig.getNomePadrao();
+			nome = nomePath != null ? nomePath : saudacaoConfig.getNomePadrao();
 		return ResponseEntity.ok(
 				String.format(template, saudacaoConfig.getSaudacao(), nome));
 	}
-	
 }
