@@ -1,2 +1,2 @@
 # microservices-java
-Projetos de MicroServices desenvolvidos em Java com Spring Boot 3
+Projetos de Microservices desenvolvidos em Java com Spring Boot 3

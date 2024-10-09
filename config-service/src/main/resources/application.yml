@@ -7,8 +7,18 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/luciano-ferretto/ParadLingProg_202402_TurmaB
+          uri: https://github.com/luciano-ferretto/microservices-java.git
+          default-label: main
           search-paths:
-          - microservices-java/configs/{application}
-          #username: luciano-ferretto
-          #password: senha
+          - 'configs/{application}'
+          #username: teste
+          #password: teste
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+  endpoint:
+    health:
+      show-details: always
