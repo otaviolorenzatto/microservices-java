@@ -12,7 +12,7 @@
 	<artifactId>config-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>config-service</name>
-	<description>Projeto MicroService de Config-service - Servidor de Configurações para Microserviços</description>
+	<description>Microservice para servidor de configuração</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -46,10 +46,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>
